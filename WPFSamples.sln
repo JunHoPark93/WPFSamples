@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid", "Grid\Grid.csproj", "{24CF0CDA-ACBD-4FC7-8F2F-53BD2A750AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox", "ListBox\ListBox.csproj", "{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockPanel", "DockPanel\DockPanel.csproj", "{072836BE-44F0-4995-B773-76227B290801}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,22 @@ Global
 		{24CF0CDA-ACBD-4FC7-8F2F-53BD2A750AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{24CF0CDA-ACBD-4FC7-8F2F-53BD2A750AA6}.Release|x64.ActiveCfg = Release|x64
 		{24CF0CDA-ACBD-4FC7-8F2F-53BD2A750AA6}.Release|x64.Build.0 = Release|x64
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Debug|x64.Build.0 = Debug|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Release|x64.ActiveCfg = Release|Any CPU
+		{F163C20A-B4BE-4DA0-BB2C-1E69FBDC6B23}.Release|x64.Build.0 = Release|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Debug|x64.Build.0 = Debug|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Release|x64.ActiveCfg = Release|Any CPU
+		{072836BE-44F0-4995-B773-76227B290801}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
