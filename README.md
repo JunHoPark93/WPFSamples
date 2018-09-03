@@ -13,3 +13,7 @@ https://docs.microsoft.com/ko-kr/previous-versions/dotnet/netframework-4.0/aa970
 ### Grid
 
 add grid using column, row, span
+
+### DockPanel
+
+add Dockpanel (placing children control to the edge of the panel)
