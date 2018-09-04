@@ -17,3 +17,8 @@ add grid using column, row, span
 ### DockPanel
 
 add Dockpanel (placing children control to the edge of the panel)
+
+### ExpenseIt
+
+Make simple WPF application from microsoft document
+Grid, Style, StaticResource, ListBox, DataTemplate, Binding
