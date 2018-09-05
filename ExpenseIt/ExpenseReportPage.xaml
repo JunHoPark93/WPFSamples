@@ -18,6 +18,15 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
+        <Grid.Resources>
+            <DataTemplate x:Key="typeItemTemplate">
+                <Label Content="{Binding XPath=@ExpenseType}"/>
+            </DataTemplate>
+            <DataTemplate x:Key="amountItemTemplate">
+                <Label Content="{Binding XPath=@ExpenseAmount}"/>
+            </DataTemplate>
+        </Grid.Resources>
+
         <Label Grid.Column="1" Style="{StaticResource headerTextStyle}">
             Expense Report For: 
         </Label>
@@ -34,22 +43,20 @@
 
             <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">Name:</Label>
-                
+                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Name}"></Label>
             </StackPanel>
             
-            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">Department:</Label>
-                
+                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>
             </StackPanel>
 
-            <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left">
-                <DataGrid ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="ExpenseType"/>
-                        <DataGridTextColumn Header="Amount"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </Grid>
+            <DataGrid ItemsSource="{Binding XPath=Expense}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="ExpenseType" CellTemplate="{StaticResource typeItemTemplate}"/>
+                    <DataGridTemplateColumn Header="Amount" CellTemplate="{StaticResource amountItemTemplate}"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
     </Grid>
 </Page>
